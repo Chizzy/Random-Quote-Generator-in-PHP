@@ -68,9 +68,21 @@ function getRandomQuote($array) {
     $randomNumber = rand(0, (count($array) - 1));
     return $array[$randomNumber];
 }
-print_r(getRandomQuote($quotes));
-
-
 
 // Create the printQuote function and name it printQuote
+function printQuote($array) {
+    $randomQuote = getRandomQuote($array);
+    
+    echo "<p class='quote'>" . $randomQuote['quote'] . "</p>";
+    echo "<p class= 'source'>" . $randomQuote['source'] ;
+    if(array_key_exists('citation', $randomQuote)) {
+        echo "<span class= 'citation'>" . $randomQuote['citation'] . "</span>";
+    }
+    if(array_key_exists('year', $randomQuote)) {
+        echo "<span class= 'year'>" . $randomQuote['year'] . "</span>";
+    }
+    echo "</p>";
+}
+printQuote($quotes)
+
 ?>
