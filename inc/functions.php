@@ -83,6 +83,5 @@ function printQuote($array) {
     }
     echo "</p>";
 }
-printQuote($quotes)
 
 ?>
