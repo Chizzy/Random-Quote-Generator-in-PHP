@@ -17,7 +17,7 @@ $quotes = [
         'year' => 1968
     ],
     [
-        'quote' => "Music does a lot of things for a lot of people. It’s transporting, for sure. It can take you right back, years back, to the very moment certain things happened in your life. It’s uplifting, it’s encouraging, it’s strengthening.",
+        'quote' => "Sometimes, what you’re looking for is already there.",
         'source' => "Aretha Franklin",
     ],
     [
