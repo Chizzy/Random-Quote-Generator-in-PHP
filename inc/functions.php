@@ -72,16 +72,17 @@ function getRandomQuote($array) {
 // Create the printQuote function and name it printQuote
 function printQuote($array) {
     $randomQuote = getRandomQuote($array);
-    
-    echo "<p class='quote'>" . $randomQuote['quote'] . "</p>";
-    echo "<p class= 'source'>" . $randomQuote['source'] ;
+    $htmlTemplate = "<p class='quote'>" . $randomQuote['quote'] . "</p>";
+    $htmlTemplate .= "<p class= 'source'>" . $randomQuote['source'] ;
     if(array_key_exists('citation', $randomQuote)) {
-        echo "<span class= 'citation'>" . $randomQuote['citation'] . "</span>";
-    }
+        $htmlTemplate .= "<span class= 'citation'>" . $randomQuote['citation'] . "</span>";
+        }
     if(array_key_exists('year', $randomQuote)) {
-        echo "<span class= 'year'>" . $randomQuote['year'] . "</span>";
-    }
-    echo "</p>";
+        $htmlTemplate .= "<span class= 'year'>" . $randomQuote['year'] . "</span>";
+       }
+    $htmlTemplate .= "</p>";
+    
+    echo $htmlTemplate;
 }
 
 ?>
