@@ -3,7 +3,6 @@
 
 // Create the Multidimensional array of quote elements and name it quotes
 // Each inner array element should be an associative array
-
 $quotes = [
     [
         'quote' => "We should constantly be aspiring to reach higher and higher and higher. We should never be comfortable where we are.",
