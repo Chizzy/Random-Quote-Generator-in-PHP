@@ -64,6 +64,11 @@ $quotes = [
 
 
 // Create the getRandomQuote function and name it getRandomQuote
+function getRandomQuote($array) {
+    $randomNumber = rand(0, (count($array) - 1));
+    return $array[$randomNumber];
+}
+print_r(getRandomQuote($quotes));
 
 
 
