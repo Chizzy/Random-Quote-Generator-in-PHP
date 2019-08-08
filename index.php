@@ -15,6 +15,7 @@ include 'inc/functions.php';
       background-color: <?php randomColorCode() ?>;
     }
   </style>
+  <meta http-equiv="refresh" content="20">
 </head>
 <body>
   <div class="container">
