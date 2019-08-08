@@ -85,4 +85,13 @@ function printQuote($array) {
     echo $htmlTemplate;
 }
 
+//Generate RGB random color code
+function randomColorCode() {
+    $red = rand(0, 255);
+    $green = rand(0, 255);
+    $blue = rand(0, 255);
+    $colorCode = "rgb($red, $green, $blue)";
+    echo $colorCode;
+}
+
 ?>

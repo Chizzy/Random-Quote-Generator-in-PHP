@@ -10,6 +10,11 @@ include 'inc/functions.php';
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body, #loadQuote {
+      background-color: <?php randomColorCode() ?>;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
